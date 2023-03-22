@@ -67,9 +67,10 @@ export const del = (clusterCode, appName) => {
  * @param {File} file 需要发布应用
  * @param {Function} onProgress 发布中的回调函数
  */
-export const upload = async (clusterCode, file, onProgress) => {
+export const upload = async (clusterCode, ufile, onProgress) => {
   const params = {
     clusterCode,
+    fileName: file.name,
   };
 
 
