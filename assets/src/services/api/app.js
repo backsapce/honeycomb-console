@@ -70,6 +70,7 @@ export const del = (clusterCode, appName) => {
 export const upload = async (clusterCode, file, onProgress) => {
   const params = {
     clusterCode,
+    fileName: file.name,
   };
 
 
